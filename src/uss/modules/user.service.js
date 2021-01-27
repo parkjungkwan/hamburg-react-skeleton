@@ -1,7 +1,3 @@
-export const userService = {
-    register, list, detail, login, logout, update, remove
-}
-
 const register = user => {
     const requestOption = {
         method: `POST`,
@@ -27,4 +23,8 @@ const update = user => {
 }
 const remove = user => {
     return fetch(``)
+}
+
+export const userService = {
+    register, list, detail, login, logout, update, remove
 }
