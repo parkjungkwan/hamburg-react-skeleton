@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { debounce } from 'throttle-debounce'
+import { useHistory, Link } from 'react-router-dom';
+
 const UserDetailTypes= {REQUEST: 'UserDetail/REQUEST', SUCCESS: 'UserDetail/SUCCESS', FAIL: 'UserDetail/FAIL'}
 const UserDetailRequest = action => ({types: UserDetailTypes.REQUEST, payload: action.payload})
 const UserDetailSuccess = action => ({types: UserDetailTypes.SUCCESS, payload: action.payload})

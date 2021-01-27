@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { debounce } from 'throttle-debounce'
+import { useHistory, Link } from 'react-router-dom';
+
 const UserJoinTypes= {REQUEST: 'UserJoin/REQUEST', SUCCESS: 'UserJoin/SUCCESS', FAIL: 'UserJoin/FAIL'}
 const UserJoinRequest = action => ({types: UserJoinTypes.REQUEST, payload: action.payload})
 const UserJoinSuccess = action => ({types: UserJoinTypes.SUCCESS, payload: action.payload})

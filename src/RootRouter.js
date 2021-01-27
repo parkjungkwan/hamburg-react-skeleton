@@ -4,7 +4,7 @@ import {Provider} from'react-redux'
 import PropTypes from 'prop-types'
 import { createStore } from 'redux'
 import ThemeProvider from "@material-ui/styles/ThemeProvider"
-import { rootReducer } from './RootReducer'
+import { rootReducer } from './root.reducer'
 import { Main } from './Main'
 import { UserLogin } from './user/index'
 import { UserJoin } from './user/index'

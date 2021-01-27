@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { debounce } from 'throttle-debounce'
+import { useHistory, Link } from 'react-router-dom';
 
 const UserLoginTypes= {REQUEST: 'UserLogin/REQUEST', SUCCESS: 'UserLogin/SUCCESS', FAIL: 'UserLogin/FAIL'}
 const UserLoginRequest = action => ({types: UserLoginTypes.REQUEST, payload: action.payload})
