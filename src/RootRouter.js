@@ -6,11 +6,12 @@ import { createStore } from 'redux'
 import ThemeProvider from "@material-ui/styles/ThemeProvider"
 import { rootReducer } from './root.reducer'
 import { Main } from './Main'
-import { UserLogin } from './user/index'
-import { UserJoin } from './user/index'
-import { UserDetail } from './user/index'
-import { UserUpdate } from './user/index'
-import { UserList } from './user/index'
+import { UserLoginPage, 
+    UserJoinPage, 
+    UserDetailPage, 
+    UserUpdatePage, 
+    UserListPage
+} from './uss/pages/index'
 
 
 
