@@ -78,5 +78,7 @@ const remove = user => dispatch =>{
 }
 
 export const userActions = {
-    register, list, detail, login, logout, update, remove
+    register, 
+     list, 
+     detail, login, logout, update, remove
 }
